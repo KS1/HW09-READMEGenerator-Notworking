@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
 
- This program generates a README file using the command line interface 
+      This program generates a README file using the command line interface 
       and Node.js dynamically. 
 
       Runs in the terminal and prompts the user for information, 
@@ -14,12 +14,13 @@
 * [Tests](#Tests)
 * [Questions](#Questions)
 * [License](#License)
-readme-generator-screenshot.png
-
+## Screenshot
 ![Screenshot](readme-generator-screenshot.png)
+readme-generator-screenshot.png
 ## Installation Instructions
 
- 1. git clone this repo. 
+ 
+                1. git clone this repo. 
 
                 2. Run npm install on your command line to install 
                    the package.json package dependency on your local machine by typing npm init. 
@@ -28,12 +29,16 @@ readme-generator-screenshot.png
                    by typing in your command line npm install inquirer.
 ## Usage Information
 
- Run node index.js in the terminal. 
+ 
+                Run node index.js in the terminal. 
 
                 Answer each prompt as thoroughly as possible. 
+
                 Markdown can be used, except for new lines.
 ### Contribution Guidelines
-Please fork this repo to create your own generator. 
+
+
+      Please fork this repo to create your own generator. 
 
       The README created by this generator is formatted for specific use-cases.
 ### Tests

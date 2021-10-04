@@ -49,7 +49,7 @@ Licensed under the Apache, Version 2.0 (the "License") you may not use this file
 ${link}
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.`;
   } else if(license === "gpl3") {
-licenseStatement = `
+licenseStatement = `\n
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation, either version 3 of the License, or
@@ -109,7 +109,9 @@ ${data.description}
 * [Tests](#Tests)
 * [Questions](#Questions)
 * [License](#License)
-${screenshot}
+## Screenshot
+![Screenshot](${data.screenshot})
+${data.screenshot}
 ## Installation Instructions
 ${data.installation}
 ## Usage Information

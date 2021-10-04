@@ -1,11 +1,11 @@
 // Including packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-// const util = require('util');
 const generateMarkdown = require("./utils/generateMarkdown.js");
-// const generateLicense = require("./utils/generateLicense.js");
 
-// const writeFileAsync = util.promisify(fs.writeFile);
+// This is not mandatory requirement in user story.
+// TODO: This code does not work. Make it work. 
+// const generateLicense = require("./utils/generateLicense.js");
 
 // Create an array of questions for user input
   const questions = [
@@ -56,6 +56,8 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
               
       ]
     },
+    // This is not mandatory requirement in user story.
+    // TODO: This code does not work. Make it work.
     // {
     //     type: "confirm",
     //     name: "generateLicense",
@@ -66,9 +68,11 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
       type: "input",
       name: "description",
       message: "Project Description:",
-      default: `Generate a README file based on user input. 
+      default: `
+      This program generates a README file using the command line interface 
+      and Node.js dynamically. \n
       Runs in the terminal and prompts the user for information, 
-      which is then populated to a README template.`,
+      which is then populated in README file.`,
       validate: function (answer) {
           if (answer.length < 1) {
               return console.log("A valid project description is required.");
@@ -80,21 +84,28 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
       type: "editor",
       name: "installation",
       message: "Installation Instructions:",
-      default: `git clone this repo. Run npm init in the terminal`
+      default: `\n 
+                1. git clone this repo. \n
+                2. Run npm install on your command line to install 
+                   the package.json package dependency on your local machine by typing npm init. \n
+                3. After you have installed node, install the inquirer extension 
+                   by typing in your command line npm install inquirer.`
     },
     {
       type: "input",
       name: "usage",
       message: "Usage Instructions:",
-      default: `Run node index.js in the terminal.
-                Answer each prompt as thoroughly as possible. 
+      default: `\n 
+                Run node index.js in the terminal. \n
+                Answer each prompt as thoroughly as possible. \n
                 Markdown can be used, except for new lines.`
     },
     {
       type: "input",
       name: "contributionGuidelines",
       message: "Contribution Guidelines:",
-      default: `Please fork this repo to create your own generator. 
+      default: `\n
+      Please fork this repo to create your own generator. \n
       The README created by this generator is formatted for specific use-cases.`
     },
     {
@@ -108,6 +119,8 @@ const generateMarkdown = require("./utils/generateMarkdown.js");
       name: "screenshot",
       message: "Filename of screenshot:",
       default: `readme-generator-screenshot.png`
+      // `https://www.logosurfer.com/wp-content/uploads/2018/03/pokemon-logo_0.png`
+      
     },
     {
         type: "input",
@@ -129,7 +142,8 @@ function writeToFile(path, data) {
     err ? console.error(err) : console.log('Saved README.md')
   );
 
-  // does not work
+  // This is not mandatory requirement in user story.
+  // TODO: This code does not work. Make it work.
   // // create license file IF user said "yes"
   // if(data.generateLicense) {
   // 	let lic = generateLicense(data);    
