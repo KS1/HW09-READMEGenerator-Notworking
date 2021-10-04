@@ -105,18 +105,18 @@ ${data.description}
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Contributing](#Contributing)
+* [Contributing](#Contribution)
 * [Tests](#Tests)
 * [Questions](#Questions)
 * [License](#License)
 ## Screenshot
 ![Screenshot](${data.screenshot})
 ${data.screenshot}
-## Installation Instructions
+## Installation
 ${data.installation}
-## Usage Information
+## Usage
 ${data.usage}
-### Contribution Guidelines
+### Contribution
 ${data.contributionGuidelines}
 ### Tests
 ${data.tests}

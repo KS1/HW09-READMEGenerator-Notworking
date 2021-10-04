@@ -10,14 +10,14 @@
 ## Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
-* [Contributing](#Contributing)
+* [Contributing](#Contribution)
 * [Tests](#Tests)
 * [Questions](#Questions)
 * [License](#License)
 ## Screenshot
 ![Screenshot](readme-generator-screenshot.png)
 readme-generator-screenshot.png
-## Installation Instructions
+## Installation
 
  
                 1. git clone this repo. 
@@ -27,7 +27,7 @@ readme-generator-screenshot.png
 
                 3. After you have installed node, install the inquirer extension 
                    by typing in your command line npm install inquirer.
-## Usage Information
+## Usage
 
  
                 Run node index.js in the terminal. 
@@ -35,7 +35,7 @@ readme-generator-screenshot.png
                 Answer each prompt as thoroughly as possible. 
 
                 Markdown can be used, except for new lines.
-### Contribution Guidelines
+### Contribution
 
 
       Please fork this repo to create your own generator. 
